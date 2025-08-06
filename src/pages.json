@@ -1,0 +1,101 @@
+{
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "Index页面"
+			}
+		},
+		{
+			"path": "pages/home/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/about/index",
+			"style": {
+				"navigationBarTitleText": "关于我们"
+			}
+		},
+		{
+			"path": "pages/user/index",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
+		},
+		{
+			"path": "pages/login/index",
+			"style":{
+				"navigationBarTitleText": "登录"
+			}
+		},
+		{
+			"path": "pages/test/index",
+			"style":{
+				"navigationBarTitleText": "测试"
+			}
+		},
+		{
+			"path": "pages/warn/index",
+			"style":{
+				"navigationStyle": "custom",
+				"navigationBarTitleText": "警报弹窗",
+				"background": "transparent",
+				"app-plus": {
+					"background": "transparent",
+					"animationType": "fade-in",
+					"popGesture": "none"
+				}
+			}
+		},
+	
+		{
+			"path": "pages/notFound/index",
+			"style":{
+				"navigationBarTitleText": "404"
+			}
+		}
+
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "uni-template",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#F8F8F8",
+		"navigationStyle": "custom" // 自定义导航
+	},
+	"tabBar": {
+		// "custom": true, // 是否显示tabbar
+		"color": "#999",
+    "selectedColor": "#2DAF8D",
+		"list": [
+			{
+        // "iconPath": "static/images/tabbar/home.png",
+        // "selectedIconPath": "static/images/tabbar/select-home.png",
+        "pagePath": "pages/index/index",
+        "text": "index"
+      },
+
+      {
+        // "iconPath": "static/images/tabbar/wx.png",
+        // "selectedIconPath": "static/images/tabbar/select-wx.png",
+        "pagePath": "pages/about/index",
+        "text": "维修进度"
+      },
+      {
+        // "iconPath": "static/images/tabbar/user.png",
+        // "selectedIconPath": "static/images/tabbar/select-user.png",
+        "pagePath": "pages/user/index",
+        "text": "我的"
+      }
+		]
+
+	},
+	"easycom": {
+		"custom": {
+			"^(?!z-paging-refresh|z-paging-load-more)z-paging(.*)": "z-paging/components/z-paging$1/z-paging$1.vue",
+			 "^xwya-(.*)": "@/components/xwya-$1/index.vue"
+		}
+	}
+}
